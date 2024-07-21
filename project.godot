@@ -1,0 +1,25 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="gdmaster-4.3"
+config/description="This is a simple, opensource masterlist server, written in Godot's gdscript. Server keeps a list of IP's (IPv4) and ports and other additional game info in memory and when player clients ask for a serverlist it sends IP lists, based on the requested game information. This is used for games that have server browsers, to retrieve all game servers from masterlist.
+You can use it with any game that you can develop and implement a simple UDP packet sender and receiver."
+config/version="1.0.0"
+run/main_scene="res://gdmaster.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
+boot_splash/show_image=false
+config/icon="res://icon/gdmaster_icon.png"
+config/windows_native_icon="res://icon/gdmaster_icon.ico"
+
+[editor]
+
+run/main_run_args="--headless "

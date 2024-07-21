@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://cj1pmqqbeh00c"]
+
+[ext_resource type="Script" path="res://gdmaster.gd" id="1_v3dxd"]
+[ext_resource type="Script" path="res://logging.gd" id="2_tfp77"]
+
+[node name="Gdmaster" type="Node"]
+script = ExtResource("1_v3dxd")
+
+[node name="Logging" type="Node" parent="."]
+script = ExtResource("2_tfp77")
